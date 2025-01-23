@@ -73,7 +73,7 @@ final <- select(final, -c("microbiome_score","PRS_score","IBDcohort","Gender.x",
 final=final[,order(colnames(final))]
 
 # remove GIEQID with uncertain matching
-final2=filter(final,!final$A_GIEQID %in% c('10017', '10018')) #IDs known to A. Bangma
+final2=filter(final,!final$A_GIEQID %in% c('XX', 'XX')) #IDs known to A. Bangma
 nrow(final2)
 #[1] 2906
 
